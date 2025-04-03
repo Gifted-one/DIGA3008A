@@ -1,30 +1,16 @@
-h1 {
-  margin: 0;
-  font-family: "Dynapuff", system-ui;
-  font-size: 150px;
-  text-align: center;
-  color: #5e17eb; /* Fill color */
-  -webkit-text-stroke: 5px black; /* Black border */
-  paint-order: stroke fill; /* Ensures stroke is drawn first */
-}
-
-nav {
+main ul {
   background: white;
   width: 100%;
-  height: 500px;
-}
-
-nav ul {
+  height: 300px;
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100%;
 }
 
-nav ul li {
+main ul li {
   width: 200px;
   height: 300px;
   background: white;
@@ -38,9 +24,10 @@ nav ul li {
   text-align: center;
 
   transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+  /* Added transition for hover effect */
 }
 
-nav ul li a {
+main ul li a {
   font-family: "Dynapuff", system-ui;
   color: #5e17eb;
   /* Fill color */
@@ -52,13 +39,26 @@ nav ul li a {
   text-decoration: none;
 }
 
-nav ul li:hover {
+main ul li:hover {
   transform: scale(1.1);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-h2 {
-  font-family: "JetBrains Mono", monospace;
-  font-size: 25px;
-  text-align: center;
+.BackButton {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: #ffff00;
+  color: white;
+  border: 3px solid black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.BackButton a {
+  color: black;
+  text-decoration: none;
+  font-family: JetBrains Mono, monospace;
+  font-size: 20px;
 }
