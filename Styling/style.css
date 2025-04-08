@@ -102,3 +102,18 @@ footer nav ul li:hover {
   transform: scale(1.1);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  footer nav ul li {
+    padding: 5px 15px;
+  }
+}
