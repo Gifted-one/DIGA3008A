@@ -105,13 +105,13 @@ footer nav ul li:hover {
 
 @media (max-width: 800px) {
   h1 {
-    font-size: 50px;
+    font-size: 60px;
   }
   h2 {
-    font-size: 40px;
+    font-size: 30px;
   }
   h3 {
-    font-size: 20px;
+    font-size: 10px;
   }
   footer nav ul li {
     padding: 5px 15px;
