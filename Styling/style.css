@@ -1,7 +1,7 @@
 h1 {
   margin: 0;
   font-family: "Dynapuff", system-ui;
-  font-size: 150px;
+  font-size:15vw;
   text-align: center;
   color: #5e17eb; /* Fill color */
   -webkit-text-stroke: 5px black; /* Black border */
@@ -10,7 +10,7 @@ h1 {
 
 h2 {
   font-family: "Dynapuff", system-ui;
-  font-size: 50px;
+  font-size: 5vw;
   text-align: center;
   color: #ffff00; /* Fill color */
   -webkit-text-stroke: 5px black; /* Black border */
@@ -19,7 +19,7 @@ h2 {
 
 h3 {
   font-family: "Dynapuff", system-ui;
-  font-size: 30px;
+  font-size: 2rem;
   text-align: center;
   color: #ffff00; /* Fill color */
   -webkit-text-stroke: 5px black; /* Black border */
@@ -40,6 +40,15 @@ main figure {
   justify-content: center;
   align-items: center;
   margin: 0;
+}
+main figure img{
+  width: 60vw;
+  height: 40vw;
+}
+
+.Potrait{
+  width: 50vw;
+  height: 60vw;
 }
 
 main figure figcaption {
@@ -114,17 +123,9 @@ footer nav ul li:hover {
 }
 
 @media (max-width: 800px) {
-  h1 {
-    font-size: 60px;
-  }
-  h2 {
-    font-size: 30px;
-  }
+
   h3 {
-    font-size: 10px;
-  }
-  footer nav ul li {
-    padding: 5px 15px;
+    font-size: 0.6rem;
   }
 
   footer nav{
@@ -140,16 +141,18 @@ footer nav ul li:hover {
     position: fixed;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
     background-color: #c6349aaf;
     height: 90vh;
-    text-align: center;
     bottom: 54px;
     left: -120%;
     transition: all 1s;
   }
   footer nav ul li{
-    margin: 20px 20px;
+    display: flex;
+    align-items: center;
+    margin: 15px;
     padding: 5px 25px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s;
 
