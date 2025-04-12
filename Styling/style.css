@@ -46,6 +46,11 @@ main figure img{
   height: 40vw;
 }
 
+main figure video{
+  width: 70vw;
+  height: 40vw;
+}
+
 .Potrait{
   width: 50vw;
   height: 60vw;
