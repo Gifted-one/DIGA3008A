@@ -1,7 +1,7 @@
 h1 {
   margin: 0;
   font-family: "Dynapuff", system-ui;
-  font-size:15vw;
+  font-size: 15vw;
   text-align: center;
   color: #5e17eb; /* Fill color */
   -webkit-text-stroke: 5px black; /* Black border */
@@ -41,17 +41,17 @@ main figure {
   align-items: center;
   margin: 0;
 }
-main figure img{
+main figure img {
   width: 60vw;
   height: 40vw;
 }
 
-main figure video{
+main figure video {
   width: 70vw;
   height: 40vw;
 }
 
-.Potrait{
+.Potrait {
   width: 50vw;
   height: 60vw;
 }
@@ -117,29 +117,27 @@ footer nav ul li:hover {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.Bars{
+.Bars {
   font-size: 30px;
   cursor: pointer;
   display: none;
 }
 
-#check{
+#check {
   display: none;
 }
 
 @media (max-width: 800px) {
-
-
-  footer nav{
+  footer nav {
     display: flex;
     justify-content: left;
   }
-  .Bars{
+  .Bars {
     display: block;
     margin: 20px;
   }
 
-  footer nav ul{
+  footer nav ul {
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -151,17 +149,15 @@ footer nav ul li:hover {
     left: -120%;
     transition: all 1s;
   }
-  footer nav ul li{
+  footer nav ul li {
     display: flex;
     align-items: center;
     margin: 15px;
     padding: 5px 25px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s;
-
-
   }
 
-  #check:checked ~ ul{
+  #check:checked ~ ul {
     left: 0;
   }
 }

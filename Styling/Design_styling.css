@@ -1,19 +1,22 @@
-main ul {
+h1 {
+  font-size: 10vw;
+}
+.Design_sections {
   background: white;
   width: 100%;
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
-main ul li {
+.Design_sections li {
   width: 200px;
   height: 300px;
-  margin: 10px 10px;
+  margin: 10px 40px;
   background: white;
   border-radius: 10px;
   border: 3px solid black;
@@ -25,10 +28,9 @@ main ul li {
   text-align: center;
 
   transition: transform 0.3s ease-in-out, box-shadow 0.3s;
-  /* Added transition for hover effect */
 }
 
-main ul li a {
+.Design_sections li a {
   font-family: "Dynapuff", system-ui;
   color: #5e17eb;
   /* Fill color */
@@ -40,7 +42,7 @@ main ul li a {
   text-decoration: none;
 }
 
-main ul li:hover {
+.Design_sections li:hover {
   transform: scale(1.1);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
@@ -62,9 +64,4 @@ main ul li:hover {
   text-decoration: none;
   font-family: JetBrains Mono, monospace;
   font-size: 20px;
-}
-
-.Font_sample {
-  width: 60vw;
-  height: 5vw;
 }
