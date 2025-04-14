@@ -86,6 +86,7 @@ footer nav {
 footer nav ul {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   height: 100%;
@@ -127,7 +128,7 @@ footer nav ul li:hover {
   display: none;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   footer nav {
     display: flex;
     justify-content: left;
