@@ -29,7 +29,7 @@ carouselWrapper.addEventListener(
 );
 
 function isMobile() {
-  return window.innerWidth <= 768;
+  return window.innerWidth <= 900;
 }
 
 function updateCarousel() {

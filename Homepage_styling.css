@@ -159,14 +159,9 @@ h2 {
   text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .carousel {
     justify-content: center;
-  }
-
-  .carousel li {
-    width: 90vw;
-    height: auto;
   }
 
   .card-left,
