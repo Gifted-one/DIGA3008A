@@ -158,3 +158,24 @@ h2 {
   font-size: 3vw;
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .carousel {
+    justify-content: center;
+  }
+
+  .carousel li {
+    width: 90vw;
+    height: auto;
+  }
+
+  .card-left,
+  .card-right {
+    display: none !important;
+  }
+
+  .card-center {
+    transform: scale(1); /* remove scale on mobile for simplicity */
+    opacity: 1;
+  }
+}

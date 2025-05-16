@@ -28,8 +28,12 @@ carouselWrapper.addEventListener(
   false
 );
 
+function isMobile() {
+  return window.innerWidth <= 768;
+}
+
 function updateCarousel() {
-  // Hide all cards
+  // Clear all classes
   cards.forEach((card) => {
     card.classList.remove(
       "dominant",
@@ -43,11 +47,10 @@ function updateCarousel() {
     card.classList.add("hidden");
   });
 
-  // Determine direction of slide
   const direction = currentIndex > previousIndex ? "right" : "left";
-
-  // Center the current card
   const centerCard = cards[currentIndex];
+
+  // Show the center card always
   centerCard.classList.remove("hidden");
   centerCard.classList.add("card-center", "dominant", `slide-in-${direction}`);
   centerCard.addEventListener(
@@ -58,18 +61,19 @@ function updateCarousel() {
     { once: true }
   );
 
-  // Only add side cards if they exist
-  if (cards[currentIndex - 1]) {
-    cards[currentIndex - 1].classList.remove("hidden");
-    cards[currentIndex - 1].classList.add("card-left");
+  // Only show side cards on non-mobile
+  if (!isMobile()) {
+    if (cards[currentIndex - 1]) {
+      cards[currentIndex - 1].classList.remove("hidden");
+      cards[currentIndex - 1].classList.add("card-left");
+    }
+    if (cards[currentIndex + 1]) {
+      cards[currentIndex + 1].classList.remove("hidden");
+      cards[currentIndex + 1].classList.add("card-right");
+    }
   }
 
-  if (cards[currentIndex + 1]) {
-    cards[currentIndex + 1].classList.remove("hidden");
-    cards[currentIndex + 1].classList.add("card-right");
-  }
-
-  // Update button states
+  // Disable buttons at edges
   leftBtn.disabled = currentIndex === 0;
   rightBtn.disabled = currentIndex === cards.length - 1;
 }
