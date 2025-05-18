@@ -48,6 +48,17 @@ main nav ul li {
   transform: scale(1); /* default state */
 }
 
+.Card-Link {
+  width: 250px;
+  height: 350px;
+  margin: 10px 10px;
+  background: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 nav ul li a {
   font-family: "Dynapuff", system-ui;
   color: #5e17eb;
