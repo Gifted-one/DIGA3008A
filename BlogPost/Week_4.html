@@ -24,6 +24,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../Styling/Blogs_Styling.css" />
+    <script src="../Scripts/BlogsNav.js" defer></script>
+    <script src="../Scripts/Sidebar.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/67033cd4fa.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -118,7 +124,31 @@
       </article>
     </main>
     <footer>
-      <div class="BackButton"><a href="index.html">Back</a></div>
+      <a class="BackButton" href="index.html">Back</a>
+
+      <nav class="bar">
+        <button class="bar-btn left">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <input type="checkbox" id="check" />
+        <label for="check" class="Bars"><i class="fa-solid fa-bars"></i></label>
+        <ul class="nav">
+          <li><a href="Week_1.html">&ltWeek 1&gt</a></li>
+          <li><a href="Week_2.html">&ltWeek 2&gt</a></li>
+          <li><a href="Week_3.html">&ltWeek 3&gt</a></li>
+          <li>
+            <a class="CurrentPage" href="Week_4.html">&ltWeek 4&gt</a>
+          </li>
+          <li>
+            <a href="Week_7.html">&ltWeek 7&gt</a>
+          </li>
+        </ul>
+
+        <button class="bar-btn right">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </nav>
     </footer>
   </body>
 </html>
