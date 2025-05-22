@@ -26,6 +26,18 @@ h3 {
   paint-order: stroke fill; /* Ensures stroke is drawn first */
 }
 
+h4 {
+  font-family: "Dynapuff", system-ui;
+  font-size: 2rem;
+  text-align: center;
+  color: #ffff00;
+  /* Fill color */
+  -webkit-text-stroke: 3px black;
+  /* Black border */
+  paint-order: stroke fill;
+  /* Ensures stroke is drawn first */
+}
+
 main {
   padding: 0 0 70px 0;
 }
