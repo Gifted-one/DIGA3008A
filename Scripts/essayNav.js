@@ -4,7 +4,7 @@ const rightButton = document.querySelector(".bar-btn.right");
 const pageKey = 'scrollProgress_' + window.location.pathname;
 
 let elementIndex = 0;
-let visibleElements = 4;
+let visibleElements = 1;
 
 function displayFour(){
 
@@ -43,7 +43,7 @@ function checkMobile() {
         visibleElements = listElements.length;
     }
     else{
-        visibleElements = 4;
+        visibleElements = 1;
     }
 }
 
@@ -89,9 +89,6 @@ displayFour();
 window.addEventListener('DOMContentLoaded', () => {
   document.getElementById('progress-bar').style.width = `${maxScroll}%`;
   document.getElementById('progress-label').textContent = `${Math.round(maxScroll)}%`;
-  console.log('Looking for key:', pageKey);
-  console.log('Found value:', maxScroll);
-
 });
 
   

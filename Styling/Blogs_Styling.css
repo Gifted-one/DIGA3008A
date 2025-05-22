@@ -206,3 +206,20 @@ footer{
   border-radius: 4px;
   z-index: 9999;
 }
+
+@media (max-width: 850px){
+  #sidebar {
+    display: none;
+  }
+
+  article {
+    margin-left: 0px;
+    padding: 1rem;
+  }
+  
+  header {
+    margin-left: 0px;
+    padding: 1rem; 
+  }
+  
+}
