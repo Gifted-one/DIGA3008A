@@ -1,6 +1,13 @@
+main nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
 main ul {
   background: white;
-  width: 100%;
+  width: 60%;
   list-style-type: none;
   margin: 0;
   padding: 0;

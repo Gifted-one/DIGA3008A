@@ -89,8 +89,6 @@ displayFour();
 window.addEventListener('DOMContentLoaded', () => {
   document.getElementById('progress-bar').style.width = `${maxScroll}%`;
   document.getElementById('progress-label').textContent = `${Math.round(maxScroll)}%`;
-  console.log('Looking for key:', pageKey);
-  console.log('Found value:', maxScroll);
 
 });
 
