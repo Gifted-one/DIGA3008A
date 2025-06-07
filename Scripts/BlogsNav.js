@@ -3,8 +3,12 @@ const leftButton = document.querySelector(".bar-btn.left");
 const rightButton = document.querySelector(".bar-btn.right");
 const pageKey = 'scrollProgress_' + window.location.pathname;
 
+const Navigation = document.getElementsByClassName("Top_Nav");
+
 let elementIndex = 0;
 let visibleElements = 4;
+
+let lastScrollTop = 0;
 
 function displayFour(){
 
@@ -76,10 +80,25 @@ window.addEventListener('scroll', () => {
   
     document.getElementById('progress-bar').style.width = `${maxScroll}%`;
     document.getElementById('progress-label').textContent = `${Math.round(maxScroll)}%`;
+
 });
   
 
+window.addEventListener("scroll", () => {
 
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+  
+    if (currentScroll > lastScrollTop && currentScroll > 100) {
+      // Scrolling down
+      Navigation[0].classList.add("hidden2");
+    } 
+    else {
+      // Scrolling up
+      Navigation[0].classList.remove("hidden2");
+    }
+  
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative scroll
+});
   
   
 window.addEventListener("resize", displayFour);

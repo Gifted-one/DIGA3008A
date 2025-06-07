@@ -130,6 +130,62 @@ footer nav ul li:hover {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+.Top_Nav {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 8px;
+  left: 13.5vw;
+  background: #c63499;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  transition: transform 0.4s ease-in-out;
+  will-change: transform;
+}
+
+.hidden2 {
+
+  transform: translateY(-150%);
+}
+
+.Top_Nav nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.Top_Nav nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.Top_Nav nav ul li {
+  margin: 0 20px;
+  padding: 5px 25px;
+  background: white;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.Top_Nav nav ul li a {
+  font-family: JetBrains Mono, monospace;
+  color: #5e17eb;
+  text-decoration: none;
+}
+
+.Top_Nav .CurrentPage {
+  color: #c63499;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #c63499;
+}
+
 .Bars {
   font-size: 30px;
   cursor: pointer;
@@ -138,6 +194,12 @@ footer nav ul li:hover {
 
 #check {
   display: none;
+}
+@media (max-width: 1500px) {
+  .Top_Nav nav{
+    display: none;
+  }
+
 }
 
 @media (max-width: 850px) {
