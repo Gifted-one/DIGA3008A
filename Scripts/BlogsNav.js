@@ -81,11 +81,6 @@ window.addEventListener('scroll', () => {
     document.getElementById('progress-bar').style.width = `${maxScroll}%`;
     document.getElementById('progress-label').textContent = `${Math.round(maxScroll)}%`;
 
-});
-  
-
-window.addEventListener("scroll", () => {
-
     const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
   
     if (currentScroll > lastScrollTop && currentScroll > 100) {
@@ -98,7 +93,9 @@ window.addEventListener("scroll", () => {
     }
   
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative scroll
+
 });
+  
   
   
 window.addEventListener("resize", displayFour);

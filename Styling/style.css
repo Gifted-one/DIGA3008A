@@ -145,7 +145,6 @@ footer nav ul li:hover {
 }
 
 .hidden2 {
-
   transform: translateY(-150%);
 }
 
@@ -196,10 +195,9 @@ footer nav ul li:hover {
   display: none;
 }
 @media (max-width: 1500px) {
-  .Top_Nav nav{
+  .Top_Nav nav {
     display: none;
   }
-
 }
 
 @media (max-width: 850px) {
@@ -235,4 +233,58 @@ footer nav ul li:hover {
   #check:checked ~ ul {
     left: 0;
   }
+}
+
+#github-projects nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#repo-list {
+  background: white;
+  width: 60%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#repo-list li {
+  width: 250px;
+  height: 350px;
+  margin: 15px 15px;
+  background: white;
+  border-radius: 10px;
+  border: 3px solid black;
+  /* Black outline */
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+  /* Added transition for hover effect */
+}
+
+#repo-list li:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#repo-list li a {
+  font-family: "Dynapuff", system-ui;
+  color: #5e17eb;
+  /* Fill color */
+  -webkit-text-stroke: 5px black;
+  /* Black border */
+  paint-order: stroke fill;
+  /* Ensures stroke is drawn first */
+  font-size: 2em;
+  text-decoration: none;
 }
