@@ -157,6 +157,7 @@ footer nav ul li:hover {
 
 .Top_Nav nav ul {
   list-style-type: none;
+  margin-right: 15vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -194,7 +195,7 @@ footer nav ul li:hover {
 #check {
   display: none;
 }
-@media (max-width: 1500px) {
+@media (max-width: 1300px) {
   .Top_Nav nav {
     display: none;
   }

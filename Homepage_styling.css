@@ -170,6 +170,27 @@ h2 {
   text-align: center;
 }
 
+#quote-box {
+  margin: 2rem auto;
+  max-width: 600px;
+  height: auto;
+  font-family: JetBrains Mono, monospace;
+  padding: 1rem;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+#quote {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 3vw;
+  text-align: center;
+}
+#author {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
 @media (max-width: 1200px) {
   .carousel {
     justify-content: center;
