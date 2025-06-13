@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   fetch(
     "https://api.allorigins.win/get?url=" +
-      encodeURIComponent("https://zenquotes.io/api/random")
+      encodeURIComponent("https://zenquotes.io/api/random"),
+    { cache: "no-store" }
   )
     .then((response) => response.json())
     .then((data) => {
