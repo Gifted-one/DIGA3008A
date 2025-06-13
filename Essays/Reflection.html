@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Reflection</title>
+    <link
+      rel="icon"
+      sizes="180x180"
+      type="image/png"
+      href="../Images/Gi_no_bg.png"
+    />
+    <link rel="stylesheet" href="../Styling/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../Styling/Blogs_Styling.css" />
+    <script src="../Scripts/Sidebar.js" defer></script>
+    <script src="../Scripts/essayNav.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/67033cd4fa.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h1>Essays</h1>
+      <div class="Top_Nav">
+        <nav class="bar">
+          <ul>
+            <li><a href="../index.html">&ltHomepage&gt</a></li>
+            <li><a href="../BlogPost/index.html">&ltBlogs&gt</a></li>
+            <li><a href="../Design/index.html">&ltDesigns&gt</a></li>
+            <li>
+              <a href="../Profile_and_Portfolio/index.html">&ltProfile&gt</a>
+            </li>
+            <li>
+              <a href="../Profile_and_Portfolio/Portfolio.html"
+                >&ltPortfolio&gt</a
+              >
+            </li>
+            <li><a class="CurrentPage" href="index.html">&ltEssay&gt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article class="Essays">
+        <h2>Website Reflection</h2>
+        <time datetime="2025-06-13">June 13, 2025</time>
+        <h3>A Reflection on the implementation of this website</h3>
+        <p>
+          As I reach the current stage of development on my website, I’ve had
+          the opportunity to reflect on how both technical structure and ethical
+          design principles have shaped my work. Throughout the process, I’ve
+          been intentional about ensuring my work is not only functional, but
+          respectful of both users and the technologies I rely on.
+        </p>
+
+        <p>
+          I’ve structured my project files in a way that reflects the
+          hierarchical information structure of my content. Each major page type
+          (e.g. blog posts, designs, profile) has its own folder, reflecting
+          their separation both in navigation and in content hierarchy. Within
+          these folders, I’ve separated concerns clearly: HTML files handle
+          structure and content, CSS files handle presentation, and JavaScript
+          files handle interactivity.
+        </p>
+
+        <p>
+          This modular structure made my website more scalable and maintainable.
+          As I continue to build more pages or features, I can easily add files
+          without cluttering or breaking the existing organization. The naming
+          conventions I’ve adopted follow a clear pattern, which allows me to
+          identify files quickly and maintain consistency across the project.
+        </p>
+
+        <p>
+          In building the site, I’ve made conscious efforts to use semantic HTML
+          wherever possible. Headers (&lth1&gt, &lth2&gt, etc.) clearly outline
+          the structure of my content, providing both users and browsers with
+          meaningful context. Navigation elements are expressed using &ltnav&gt,
+          and sections are appropriately wrapped in &ltsection&gt and
+          &ltarticle&gt tags where relevant.
+        </p>
+
+        <p>
+          By using semantic elements, I’ve improved accessibility for screen
+          readers and search engines, while also enhancing usability for all
+          users. For example, the sidebar navigation not only orients sighted
+          users, but provides clear landmarking for assistive technologies. I
+          recognise that there’s always more room for improvement in fully
+          expressing interactive elements like buttons and links with proper
+          ARIA roles where necessary, but I think my use of semantic markup has
+          laid a strong foundation for accessibility.
+        </p>
+
+        <p>
+          I’ve included sufficient metadata across my pages to assist browsers,
+          search engines, and social media platforms in correctly interpreting
+          and previewing my content. Every page includes properly defined
+          character sets and viewport configurations for mobile responsiveness.
+          Descriptive titles and meta descriptions help search engines and users
+          understand the purpose of each page.
+        </p>
+
+        <p>
+          In addition, I’ve begun incorporating author metadata and Open Graph
+          metadata for richer sharing on social media platforms. While there may
+          be opportunities to include even more detailed metadata (such as
+          article-specific metadata for blogs), I believe my current metadata
+          structure balances completeness and practicality for this stage of
+          development.
+        </p>
+
+        <p>
+          Throughout my site, inline styling has been avoided as required,
+          centralising all visual styling into dedicated CSS files. This has
+          allowed consistency across pages while keeping presentation concerns
+          separated from structure and logic. My CSS is modular and
+          maintainable, with reusable class structures for elements like cards,
+          buttons, and headers.
+        </p>
+
+        <p>
+          Importantly, I’ve adopted responsive design principles using tools
+          like flexbox and grid for adaptable layouts. This ensures my site
+          remains usable across a range of devices, from large screens to mobile
+          phones. I've also made heavy use of relative sizing units,
+          specifically view width. This is very effective in the titles because
+          it means they remain the same across devices. The visual design
+          choices I’ve made also reflect my commitment to creating an
+          expressive, human-centered space that aligns with my aesthetic values.
+        </p>
+
+        <p>
+          JavaScript has played a key role in enhancing interactivity across my
+          website. I’ve used JS to create interactive carousels, implement
+          reading progress trackers, dynamically load content from external APIs
+          (like GitHub repositories and quotes), and to improve navigation with
+          features like hiding the navbar on scroll. These interaction points
+          rely on event handling and DOM manipulation, all of which are
+          expressed cleanly through external JS files and avoid inline
+          scripting. Where possible, I’ve consolidated repeated functionality,
+          such as handling scroll-based updates and rendering dynamic content
+          into reusable functions.
+        </p>
+
+        <p>
+          Beyond the technical structure, I’ve been intentional about embedding
+          ethical considerations into every layer of my work. I’ve avoided dark
+          patterns, prioritised user autonomy, and respected third-party
+          services by using official APIs where possible. My progress tracker
+          stores data locally rather than on a server, preserving privacy while
+          still offering useful functionality.
+        </p>
+
+        <p>
+          I believe that ethical design is not something added at the end — it’s
+          baked into every decision: how I structure my files, how I label my
+          content, how I present information, and how I enable interaction. In
+          this way, both justice and care have become part of my creative
+          materials, guiding my decisions throughout the development of this
+          site.
+        </p>
+
+        <p>
+          This website has been a learning curve throughout, from learning HTML
+          to JavaScript. Along the way I explored how to make the web more
+          assessable and how to avoid bad practices and learned how some big
+          corporations are using dark patterns for their own advantage. Although
+          my website is much better now than when it started out there are a few
+          key areas which could use some improvements. like including more ARIA
+          compliant elements could be used to further improve the accessibility
+          of the website. Also include better page descriptions such that the
+          site is easier to find and web crawlers have an easier job.
+        </p>
+
+        <div id="progress-container">
+          <div id="progress-bar"></div>
+          <p>Progress:</p>
+          <div id="progress-label">0%</div>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <a class="BackButton" href="index.html">Back</a>
+
+      <nav class="bar">
+        <button class="bar-btn left">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <input type="checkbox" id="check" />
+        <label for="check" class="Bars"><i class="fa-solid fa-bars"></i></label>
+        <ul class="nav">
+          <li><a href="essay_1.html">&ltEssay 1&gt</a></li>
+          <li><a href="essay_2.html">&ltEssay 2&gt</a></li>
+          <li><a href="Reflection.html">&ltWebsite Reflection&gt</a></li>
+        </ul>
+
+        <button class="bar-btn right">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </nav>
+    </footer>
+  </body>
+</html>
